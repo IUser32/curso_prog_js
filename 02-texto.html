@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02. Texto y citas</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>02. Texto y citas</h1>
+        <p>HTML ofrece etiquetas para expresar el significado de fragmentos de texto.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Énfasis y resaltado</h2>
+            <p><strong>strong</strong> indica importancia; <em>em</em> expresa énfasis.</p>
+            <p><mark>mark</mark> señala un fragmento relevante en este contexto y <small>small</small> suele usarse para anotaciones.</p>
+            <p>Este dato fue <del>eliminado</del> y este otro fue <ins>añadido</ins>.</p>
+        </section>
+
+        <section>
+            <h2>Subíndices, superíndices y abreviaturas</h2>
+            <p>La fórmula del agua es H<sub>2</sub>O y una potencia puede escribirse como 3<sup>2</sup>.</p>
+            <p><abbr title="HyperText Markup Language">HTML</abbr> significa lenguaje de marcado de hipertexto.</p>
+        </section>
+
+        <section>
+            <h2>Citas</h2>
+            <p>Una cita corta dentro de un párrafo: <q>La práctica hace al maestro.</q></p>
+            <blockquote cite="https://es.wikipedia.org/">
+                <p>Una cita extensa se puede separar del texto que la rodea con el elemento blockquote.</p>
+            </blockquote>
+            <p>El atributo <code>cite</code> puede indicar la fuente de una cita.</p>
+        </section>
+
+        <section>
+            <h2>Código y contenido preformateado</h2>
+            <p>Para mencionar una etiqueta en línea, se puede usar <code>&lt;header&gt;</code>.</p>
+            <pre><code>&lt;p&gt;Hola, mundo&lt;/p&gt;
+&lt;p&gt;Este texto conserva
+los saltos de línea.&lt;/p&gt;</code></pre>
+            <p><code>&lt;pre&gt;</code> conserva espacios y saltos de línea; <code>&lt;code&gt;</code> identifica código.</p>
+        </section>
+    </main>
+
+    <nav aria-label="Navegación de prácticas">
+        <a href="01-estructura.html">Anterior: estructura</a> |
+        <a href="index.html">Índice</a> |
+        <a href="03-enlaces-listas.html">Siguiente: enlaces y listas</a>
+    </nav>
+</body>
+</html>

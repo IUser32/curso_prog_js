@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. Enlaces, listas e imágenes</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>03. Enlaces, listas e imágenes</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enlaces</h2>
+            <p><a href="index.html">Este enlace abre otra página de este proyecto.</a></p>
+            <p><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Referencia de HTML en MDN (abre una pestaña nueva)</a></p>
+            <p>El atributo <code>href</code> contiene el destino. Si se usa <code>target="_blank"</code>, añade <code>rel="noopener noreferrer"</code>.</p>
+        </section>
+
+        <section>
+            <h2>Listas</h2>
+            <h3>Lista sin orden</h3>
+            <ul>
+                <li>Manzanas</li>
+                <li>Peras</li>
+                <li>Naranjas</li>
+            </ul>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Abre el editor.</li>
+                <li>Escribe el HTML.</li>
+                <li>Guarda y abre el archivo en el navegador.</li>
+            </ol>
+
+            <h3>Lista de descripciones</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para estructurar contenido web.</dd>
+                <dt>Elemento</dt>
+                <dd>Una etiqueta y el contenido que esta delimita.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Imágenes y figuras</h2>
+            <figure>
+                <img src="imagenes/ejemplo.jpg" alt="Reemplaza esta descripción por lo que aparece en tu imagen">
+                <figcaption>Ejemplo de imagen: coloca un archivo en imagenes/ejemplo.jpg o cambia el valor de src.</figcaption>
+            </figure>
+            <p>El atributo <code>alt</code> describe la imagen para lectores de pantalla y cuando el archivo no puede mostrarse.</p>
+        </section>
+    </main>
+
+    <nav aria-label="Navegación de prácticas">
+        <a href="02-texto.html">Anterior: texto</a> |
+        <a href="index.html">Índice</a> |
+        <a href="04-tablas.html">Siguiente: tablas</a>
+    </nav>
+</body>
+</html>

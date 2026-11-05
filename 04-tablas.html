@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. Tablas</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>04. Tablas</h1>
+        <p>Las tablas organizan datos relacionados en filas y columnas.</p>
+    </header>
+
+    <main>
+        <table>
+            <caption>Horario de ejemplo</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Día</th>
+                    <th scope="col">Tema</th>
+                    <th scope="col">Duración</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Lunes</th>
+                    <td>Estructura HTML</td>
+                    <td>45 minutos</td>
+                </tr>
+                <tr>
+                    <th scope="row">Miércoles</th>
+                    <td>Enlaces y listas</td>
+                    <td>30 minutos</td>
+                </tr>
+                <tr>
+                    <th scope="row">Viernes</th>
+                    <td colspan="2">Práctica de repaso</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td colspan="2">Tres sesiones</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section>
+            <h2>Elementos de la tabla</h2>
+            <ul>
+                <li><code>table</code> crea la tabla y <code>caption</code> le da un título.</li>
+                <li><code>thead</code>, <code>tbody</code> y <code>tfoot</code> agrupan filas.</li>
+                <li><code>tr</code> representa una fila; <code>th</code> es una celda de encabezado y <code>td</code> una celda de datos.</li>
+                <li><code>scope</code> ayuda a asociar encabezados con filas o columnas. <code>colspan</code> hace que una celda abarque varias columnas.</li>
+            </ul>
+            <p>Usa tablas para datos tabulares, no para organizar el diseño de una página.</p>
+        </section>
+    </main>
+
+    <nav aria-label="Navegación de prácticas">
+        <a href="03-enlaces-listas.html">Anterior: enlaces y listas</a> |
+        <a href="index.html">Índice</a> |
+        <a href="05-formularios.html">Siguiente: formularios</a>
+    </nav>
+</body>
+</html>

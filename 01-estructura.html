@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. Estructura y encabezados</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>01. Estructura y encabezados</h1>
+        <p>Un documento HTML comienza con una estructura que indica al navegador cómo interpretar su contenido.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Estructura principal</h2>
+            <p><code>&lt;!DOCTYPE html&gt;</code> declara que el documento usa HTML moderno.</p>
+            <p>El elemento <code>&lt;html&gt;</code> contiene la página. El atributo <code>lang</code> indica el idioma del documento.</p>
+            <p><code>&lt;head&gt;</code> guarda metadatos y el título de la pestaña; <code>&lt;body&gt;</code> contiene lo que se muestra en la página.</p>
+            <p>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> permite usar correctamente caracteres como ñ y tildes.</p>
+        </section>
+
+        <section>
+            <h2>Jerarquía de encabezados</h2>
+            <h1>Encabezado de nivel 1</h1>
+            <h2>Encabezado de nivel 2</h2>
+            <h3>Encabezado de nivel 3</h3>
+            <h4>Encabezado de nivel 4</h4>
+            <h5>Encabezado de nivel 5</h5>
+            <h6>Encabezado de nivel 6</h6>
+            <p>Usa los niveles en orden jerárquico para organizar el contenido, no solo para cambiar el tamaño del texto.</p>
+        </section>
+
+        <section>
+            <h2>Párrafos y saltos</h2>
+            <p>Un párrafo se escribe con <code>&lt;p&gt;</code>. El navegador agrega separación entre párrafos.</p>
+            <p>Esta frase termina aquí.<br>La etiqueta <code>&lt;br&gt;</code> inicia otra línea dentro del mismo párrafo.</p>
+            <hr>
+            <p><code>&lt;hr&gt;</code> representa una separación temática entre contenidos.</p>
+        </section>
+    </main>
+
+    <nav aria-label="Navegación de prácticas">
+        <a href="index.html">Índice</a> |
+        <a href="02-texto.html">Siguiente: texto y citas</a>
+    </nav>
+</body>
+</html>

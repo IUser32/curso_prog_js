@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. Formularios</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>05. Formularios</h1>
+        <p>Los formularios permiten recoger información de quien visita una página.</p>
+    </header>
+
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120">
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha preferida:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+
+                <p>
+                    <label for="tema">Tema de interés:</label>
+                    <select id="tema" name="tema">
+                        <option value="">Selecciona un tema</option>
+                        <optgroup label="Fundamentos">
+                            <option value="estructura">Estructura HTML</option>
+                            <option value="texto">Texto y enlaces</option>
+                        </optgroup>
+                        <optgroup label="Práctica">
+                            <option value="formularios">Formularios</option>
+                            <option value="semantica">Semántica</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="novedades" name="novedades" value="si">
+                    <label for="novedades">Quiero recibir novedades</label>
+                </p>
+
+                <p>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe aquí"></textarea>
+                </p>
+            </fieldset>
+
+            <p><button type="submit">Enviar formulario</button> <button type="reset">Limpiar</button></p>
+        </form>
+
+        <section>
+            <h2>Consejos</h2>
+            <ul>
+                <li>Asocia cada control con una etiqueta <code>label</code> mediante <code>for</code> e <code>id</code>.</li>
+                <li>El atributo <code>name</code> identifica el dato enviado; <code>required</code> activa una validación básica del navegador.</li>
+                <li>Este ejemplo no guarda ni envía datos a un servidor.</li>
+            </ul>
+        </section>
+    </main>
+
+    <nav aria-label="Navegación de prácticas">
+        <a href="04-tablas.html">Anterior: tablas</a> |
+        <a href="index.html">Índice</a> |
+        <a href="06-semantica-multimedia.html">Siguiente: semántica y multimedia</a>
+    </nav>
+</body>
+</html>

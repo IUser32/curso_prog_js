@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06. Semántica, interacción y multimedia</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Volver al índice</a></p>
+        <h1>06. Semántica, interacción y multimedia</h1>
+        <p>Los elementos semánticos describen el propósito de cada parte de una página.</p>
+        <nav aria-label="Secciones de esta página">
+            <a href="#estructura">Estructura semántica</a> |
+            <a href="#interaccion">Interacción</a> |
+            <a href="#multimedia">Multimedia</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="estructura">
+            <h2>Estructura semántica</h2>
+            <article>
+                <header>
+                    <h3>Una nota de ejemplo</h3>
+                    <p>Publicado el <time datetime="2026-11-05">5 de noviembre de 2026</time>.</p>
+                </header>
+                <p><code>article</code> representa contenido independiente. <code>section</code> agrupa contenido relacionado.</p>
+                <footer>
+                    <p>Fin de la nota de ejemplo.</p>
+                </footer>
+            </article>
+            <aside>
+                <h3>Contenido complementario</h3>
+                <p><code>aside</code> contiene información relacionada, pero secundaria al contenido principal.</p>
+            </aside>
+            <p>En la página también se usan <code>header</code>, <code>nav</code>, <code>main</code> y <code>footer</code> para nombrar regiones con significado.</p>
+        </section>
+
+        <section id="interaccion">
+            <h2>Elementos interactivos y de estado</h2>
+            <details>
+                <summary>¿Qué hace details?</summary>
+                <p>Permite mostrar u ocultar contenido al activar su resumen, sin JavaScript.</p>
+            </details>
+            <p>Progreso de una práctica: <progress value="4" max="6">4 de 6</progress></p>
+            <p>Nivel de avance estimado: <meter min="0" max="100" low="30" high="80" optimum="90" value="70">70 %</meter></p>
+            <dialog open>
+                <p>Este cuadro de diálogo está visible porque incluye el atributo open.</p>
+            </dialog>
+        </section>
+
+        <section id="multimedia">
+            <h2>Audio y video</h2>
+            <p>Reemplaza las rutas de ejemplo por archivos multimedia existentes para probar los controles.</p>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="media/audio-ejemplo.mp3" type="audio/mpeg">
+                Tu navegador no puede reproducir este audio.
+            </audio>
+            <h3>Video</h3>
+            <video controls width="480">
+                <source src="media/video-ejemplo.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+            <p>Los elementos <code>audio</code> y <code>video</code> aceptan fuentes mediante <code>source</code>; <code>controls</code> muestra controles de reproducción.</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Navegación de prácticas">
+            <a href="05-formularios.html">Anterior: formularios</a> |
+            <a href="index.html">Índice</a>
+        </nav>
+    </footer>
+</body>
+</html>
