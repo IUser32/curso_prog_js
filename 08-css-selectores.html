@@ -82,23 +82,23 @@
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-basicos p {
+<pre>p {
     color: #334155;
 }
 
-#ej-basicos .destacado {
+.destacado {
     background: #fef08a;
     font-weight: 700;
 }
 
-#ej-basicos #aviso {
+#aviso {
     padding-left: 8px;
     border-left: 4px solid #dc2626;
     color: #dc2626;
 }
 
-#ej-basicos h3,
-#ej-basicos h4 {
+h3,
+h4 {
     color: #4f46e5;
 }</pre>
                 </figure>
@@ -141,24 +141,24 @@
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-menu .menu &gt; li {
+<pre>.menu &gt; li {
     display: inline-block;
 }
 
-#ej-menu .menu &gt; li + li {
+.menu &gt; li + li {
     border-left: 1px solid #475569;
 }
 
-#ej-menu .menu a {
+.menu a {
     padding: 12px 20px;
     color: #cbd5e1;
 }
 
-#ej-menu .menu a:hover {
+.menu a:hover {
     background: #334155;
 }
 
-#ej-menu .menu a.activo {
+.menu a.activo {
     background: #4f46e5;
     font-weight: 700;
 }</pre>
@@ -190,20 +190,20 @@
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-tabla tbody tr:nth-child(even) {
+<pre>tbody tr:nth-child(even) {
     background: #f1f5f9;
 }
 
-#ej-tabla tbody tr:hover {
+tbody tr:hover {
     background: #e0e7ff;
 }
 
-#ej-tabla td:first-child {
+td:first-child {
     font-weight: 700;
 }
 
-#ej-tabla td:last-child,
-#ej-tabla th:last-child {
+td:last-child,
+th:last-child {
     text-align: right;
 }</pre>
                 </figure>
@@ -246,17 +246,17 @@ li:not(.activo)       todos menos .activo</pre>
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-tareas input:checked + label {
+<pre>input:checked + label {
     color: #94a3b8;
     text-decoration: line-through;
 }
 
-#ej-tareas li:has(input:checked) {
+li:has(input:checked) {
     background: #ecfdf5;
     border-color: #6ee7b7;
 }
 
-#ej-tareas li:not(:has(input:checked)) {
+li:not(:has(input:checked)) {
     border-left: 4px solid #f59e0b;
 }</pre>
                 </figure>
@@ -285,24 +285,24 @@ li:not(.activo)       todos menos .activo</pre>
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-formulario input:focus {
+<pre>input:focus {
     border-color: #4f46e5;
     box-shadow: 0 0 0 3px #c7d2fe;
 }
 
-#ej-formulario input:valid:not(:placeholder-shown) {
+input:valid:not(:placeholder-shown) {
     border-color: #16a34a;
 }
 
-#ej-formulario input:invalid:not(:placeholder-shown) {
+input:invalid:not(:placeholder-shown) {
     border-color: #dc2626;
 }
 
-#ej-formulario input:invalid:not(:placeholder-shown) + .ayuda {
+input:invalid:not(:placeholder-shown) + .ayuda {
     display: block;
 }
 
-#ej-formulario input:disabled {
+input:disabled {
     background: #f1f5f9;
     cursor: not-allowed;
 }</pre>
@@ -338,23 +338,23 @@ ya escribió algo.</pre>
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-atributos a[href^="http"]::after {
+<pre>a[href^="http"]::after {
     content: " ↗";
 }
 
-#ej-atributos a[href$=".pdf"]::before {
+a[href$=".pdf"]::before {
     content: "📄 ";
 }
 
-#ej-atributos a[href^="mailto:"]::before {
+a[href^="mailto:"]::before {
     content: "✉️ ";
 }
 
-#ej-atributos a[target="_blank"] {
+a[target="_blank"] {
     font-style: italic;
 }
 
-#ej-atributos input[type="password"] {
+input[type="password"] {
     border: 2px solid #dc2626;
 }</pre>
                 </figure>
@@ -387,29 +387,29 @@ ya escribió algo.</pre>
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-revista p:first-of-type::first-letter {
+<pre>p:first-of-type::first-letter {
     float: left;
     margin-right: 8px;
     color: #b45309;
     font-size: 3.5rem;
 }
 
-#ej-revista p:first-of-type::first-line {
+p:first-of-type::first-line {
     font-variant: small-caps;
 }
 
-#ej-revista blockquote::before {
+blockquote::before {
     content: "“";
     color: #b45309;
     font-size: 4rem;
 }
 
-#ej-revista li::marker {
+li::marker {
     content: "★ ";
     color: #b45309;
 }
 
-#ej-revista ::selection {
+::selection {
     background: #b45309;
     color: #ffffff;
 }</pre>
@@ -449,7 +449,7 @@ la propiedad content.</pre>
 .esp p              { font-weight: 700; }
 
 .esp .forzado       { color: #7c3aed !important; }
-#ej-especificidad .forzado { color: #0891b2; }</pre>
+.forzado { color: #0891b2; }</pre>
                 </figure>
                 <figure>
                     <figcaption>Cómo se cuenta</figcaption>
@@ -491,11 +491,11 @@ resuelve por separado.
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-faq .respuesta {
+<pre>.respuesta {
     opacity: 0.5;
 }
 
-#ej-faq .respuesta:target {
+.respuesta:target {
     border-color: #4f46e5;
     background: #eef2ff;
     opacity: 1;
@@ -537,22 +537,22 @@ resuelve por separado.
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-tabs input[type="radio"] {
+<pre>input[type="radio"] {
     position: absolute;
     opacity: 0;
 }
 
-#ej-tabs .panel {
+.panel {
     display: none;
 }
 
-#ej-tabs #tab-desc:checked ~ #panel-desc,
-#ej-tabs #tab-spec:checked ~ #panel-spec,
-#ej-tabs #tab-opin:checked ~ #panel-opin {
+#tab-desc:checked ~ #panel-desc,
+#tab-spec:checked ~ #panel-spec,
+#tab-opin:checked ~ #panel-opin {
     display: block;
 }
 
-#ej-tabs #tab-desc:checked ~ .pestanas label[for="tab-desc"] {
+#tab-desc:checked ~ .pestanas label[for="tab-desc"] {
     border-color: #4f46e5;
     color: #4f46e5;
 }</pre>
@@ -586,24 +586,24 @@ resuelve por separado.
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-precios .plan:nth-child(2) {
+<pre>.plan:nth-child(2) {
     border-color: #4f46e5;
     background: #eef2ff;
 }
 
-#ej-precios .plan:nth-child(2)::before {
+.plan:nth-child(2)::before {
     content: "Más popular";
 }
 
-#ej-precios .planes:hover .plan:not(:hover) {
+.planes:hover .plan:not(:hover) {
     opacity: 0.45;
 }
 
-#ej-precios .plan:hover {
+.plan:hover {
     transform: translateY(-4px);
 }
 
-#ej-precios .plan li + li {
+.plan li + li {
     border-top: 1px solid #e2e8f0;
 }</pre>
                 </figure>
@@ -655,20 +655,20 @@ arriba del primer elemento.</pre>
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-buscador .caja:focus-within {
+<pre>.caja:focus-within {
     border-color: #4f46e5;
     box-shadow: 0 0 0 4px #c7d2fe;
 }
 
-#ej-buscador .caja:focus-within .icono {
+.caja:focus-within .icono {
     color: #4f46e5;
 }
 
-#ej-buscador .sugerencias {
+.sugerencias {
     display: none;
 }
 
-#ej-buscador .caja:focus-within + .sugerencias {
+.caja:focus-within + .sugerencias {
     display: block;
 }</pre>
                 </figure>
@@ -704,25 +704,25 @@ arriba del primer elemento.</pre>
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-opciones label:has(input:checked) {
+<pre>label:has(input:checked) {
     border-color: #4f46e5;
     background: #eef2ff;
 }
 
-#ej-opciones label:has(input:checked)::after {
+label:has(input:checked)::after {
     content: "✔";
     float: right;
 }
 
-#ej-opciones .aviso {
+.aviso {
     display: none;
 }
 
-#ej-opciones form:has(input[value="express"]:checked) .aviso-express {
+form:has(input[value="express"]:checked) .aviso-express {
     display: block;
 }
 
-#ej-opciones form:has(input:checked) .sin-eleccion {
+form:has(input:checked) .sin-eleccion {
     display: none;
 }</pre>
                 </figure>
@@ -751,16 +751,16 @@ arriba del primer elemento.</pre>
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-vacio .badge:empty {
+<pre>.badge:empty {
     display: none;
 }
 
-#ej-vacio .carrito:empty::before {
+.carrito:empty::before {
     content: "Tu carrito está vacío 🛒";
     color: #94a3b8;
 }
 
-#ej-vacio td:empty {
+td:empty {
     background: repeating-linear-gradient(
         45deg, #f1f5f9, #f1f5f9 6px,
         #ffffff 6px, #ffffff 12px);
@@ -836,8 +836,8 @@ Mostrar solo los 5 primeros comentarios</pre>
                 <aside>
                     <h4>Nota al margen</h4>
                 </aside>
-                <div class="caja-is"><p>Dentro de <code>:is(.caja-is)</code>: rojo, porque <code>:is()</code> suma el peso de la clase y gana a <code>#ej-is p</code>.</p></div>
-                <div class="caja-where"><p>Dentro de <code>:where(.caja-where)</code>: gris, porque <code>:where()</code> pesa cero y pierde contra <code>#ej-is p</code>.</p></div>
+                <div class="caja-is"><p>Dentro de <code>:is(.caja-is)</code>: rojo, porque <code>:is()</code> suma el peso de la clase y gana a <code>p</code>.</p></div>
+                <div class="caja-where"><p>Dentro de <code>:where(.caja-where)</code>: gris, porque <code>:where()</code> pesa cero y empata con <code>p</code>, que va después y gana.</p></div>
             </div>
             <div class="codigo">
                 <figure>
@@ -851,19 +851,19 @@ aside h4::before {
                 </figure>
                 <figure>
                     <figcaption>Con <code>:is()</code></figcaption>
-<pre>#ej-is :is(article, aside) :is(h3, h4)::before {
+<pre>:is(article, aside) :is(h3, h4)::before {
     content: "▸ ";
 }
 
-#ej-is :is(.caja-is) p {
+:is(.caja-is) p {
     color: #dc2626;
 }
 
-#ej-is :where(.caja-where) p {
+:where(.caja-where) p {
     color: #dc2626;
 }
 
-#ej-is p {
+p {
     color: #334155;
 }</pre>
                 </figure>
@@ -883,26 +883,26 @@ aside h4::before {
             <div class="codigo">
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-botones .boton:hover {
+<pre>.boton:hover {
     background: #4338ca;
 }
 
-#ej-botones .boton:active {
+.boton:active {
     transform: translateY(2px) scale(0.98);
 }
 
-#ej-botones .boton:focus-visible {
+.boton:focus-visible {
     outline: 3px solid #f59e0b;
     outline-offset: 3px;
 }
 
-#ej-botones .boton:disabled {
+.boton:disabled {
     background: #cbd5e1;
     cursor: not-allowed;
 }
 
-#ej-botones a.enlace:link    { color: #1d4ed8; }
-#ej-botones a.enlace:visited { color: #7c3aed; }</pre>
+a.enlace:link    { color: #1d4ed8; }
+a.enlace:visited { color: #7c3aed; }</pre>
                 </figure>
                 <figure>
                     <figcaption>Orden recomendado (LoVe HAte)</figcaption>
@@ -949,21 +949,21 @@ clic con el mouse.</pre>
                 </figure>
                 <figure>
                     <figcaption>CSS</figcaption>
-<pre>#ej-requerido label:has(+ input:required)::after {
+<pre>label:has(+ input:required)::after {
     content: " *";
     color: #dc2626;
 }
 
-#ej-requerido input:optional {
+input:optional {
     border-style: dashed;
 }
 
-#ej-requerido input::placeholder {
+input::placeholder {
     color: #94a3b8;
     font-style: italic;
 }
 
-#ej-requerido input:read-only {
+input:read-only {
     background: #f8fafc;
     color: #64748b;
 }</pre>

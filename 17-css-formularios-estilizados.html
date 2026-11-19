@@ -765,8 +765,8 @@ fácil de tocar con el dedo.</pre>
 }
 
 .anual { display: none; }
-#ej-planes:has(#pl-anual:checked) .anual { display: inline; }
-#ej-planes:has(#pl-anual:checked) .mensual { display: none; }</pre>
+body:has(#pl-anual:checked) .anual { display: inline; }
+body:has(#pl-anual:checked) .mensual { display: none; }</pre>
                 </figure>
                 <figure>
                     <figcaption>Tarjetas</figcaption>
@@ -1422,8 +1422,8 @@ maxlength="280"
 }
 
 .registro { display: none; }
-#ej-login:has(#lg-registro:checked) .registro { display: grid; }
-#ej-login:has(#lg-registro:checked) .ingreso { display: none; }
+body:has(#lg-registro:checked) .registro { display: grid; }
+body:has(#lg-registro:checked) .ingreso { display: none; }
 
 .separador {
     display: flex;
@@ -1563,8 +1563,8 @@ navegador y del celular funciona solo.</pre>
     bottom: 12px;
 }
 
-#ej-pago:has(#pg-transferencia:checked) .datos-tarjeta { display: none; }
-#ej-pago:has(#pg-transferencia:checked) .datos-transferencia { display: block; }</pre>
+body:has(#pg-transferencia:checked) .datos-tarjeta { display: none; }
+body:has(#pg-transferencia:checked) .datos-transferencia { display: block; }</pre>
                 </figure>
                 <figure>
                     <figcaption>Atributos que cambian todo en el celular</figcaption>
@@ -1670,26 +1670,26 @@ type="number" le pondría flechitas.</pre>
     display: none;
 }
 
-#ej-pasos:has(#ps-1:checked) .paso-1,
-#ej-pasos:has(#ps-2:checked) .paso-2,
-#ej-pasos:has(#ps-3:checked) .paso-3 {
+body:has(#ps-1:checked) .paso-1,
+body:has(#ps-2:checked) .paso-2,
+body:has(#ps-3:checked) .paso-3 {
     display: grid;
     gap: 14px;
 }
 
-#ej-pasos:has(#ps-2:checked) .ind-2 .num {
+body:has(#ps-2:checked) .ind-2 .num {
     border-color: #2563eb;
     background: #2563eb;
     color: #ffffff;
 }
 
-#ej-pasos:has(#ps-2:checked) .ind-1 .num {
+body:has(#ps-2:checked) .ind-1 .num {
     border-color: #16a34a;
     background: #dcfce7;
     color: transparent;
 }
 
-#ej-pasos:has(#ps-2:checked) .ind-1 .num::before {
+body:has(#ps-2:checked) .ind-1 .num::before {
     content: "✓";
     position: absolute;
     inset: 0;
@@ -1703,8 +1703,8 @@ type="number" le pondría flechitas.</pre>
     transition: width 0.3s;
 }
 
-#ej-pasos:has(#ps-2:checked) .relleno { width: 66%; }
-#ej-pasos:has(#ps-3:checked) .relleno { width: 100%; }
+body:has(#ps-2:checked) .relleno { width: 66%; }
+body:has(#ps-3:checked) .relleno { width: 100%; }
 
 .escala {
     display: grid;

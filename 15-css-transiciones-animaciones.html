@@ -1155,7 +1155,7 @@ Unidades:  deg (grados), turn (1turn = 360deg),
     display: none;
 }
 
-#ej-escalonada:has(input:checked) .resultados {
+body:has(input:checked) .resultados {
     display: grid;
 }
 
@@ -1287,8 +1287,8 @@ play-state: paused   congela la animación donde va, sin reiniciar</pre>
         scroll-behavior: auto !important;
     }
 
-    #ej-toast .toast,
-    #ej-movimiento .pelota {
+    .toast,
+    .pelota {
         animation: none;
     }
 }</pre>
